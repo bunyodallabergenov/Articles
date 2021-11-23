@@ -1,0 +1,142 @@
+/* GLOBAL */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #222222;
+  height: 100%;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; 
+}
+
+/* GLOBAL WRAPPER */
+.global-wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-grow: 1;
+}
+
+
+/*/ HERO SECTION */
+.hero {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('/images/Rectangle\ 1.png');
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.hero-content {
+  width: 375px;
+  color: #fff;
+}
+
+.hero-heading {
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 1.5px;
+}
+
+.main-btn {
+  text-decoration: none;
+  background-color: #1e90ff;
+  padding: 12px 24px;
+}
+
+.main-btn-inner {
+  align-items: center;
+}
+
+.main-btn-text {
+  color: #fff;
+}
+
+.main-btn-image::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: url(/images/vector.svg);
+  background-size: contain;
+  display: inline-block;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+}
+
+/* NEWS SECTION */
+.const {
+  display: flex;
+  margin-left: 140px;
+  margin-top: 35px;
+}
+
+.news-title {
+   padding-top: 35px;
+   padding-bottom: 35px;
+   border-bottom: 2px solid #999;
+   font-weight: 400;
+   width: 560px;
+}
+
+.new-card-img {
+  border-radius: 4px;
+  height: 110px;
+}
+
+.news-card-link {
+  text-decoration: none;
+  color: #222222;
+  margin-left: 24px;
+  width: 310px;
+  letter-spacing: 2px;
+  line-height: 22px;
+  /* display: inline-block; */
+}
+
+.news-card-link:hover {
+  color: #1e90ff;
+}
+
+.news-card-link:active {
+  opacity: 0.6;
+}
+
+.again-download {
+  color: #fff;
+  text-decoration: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.link-div {
+  background-color: #1E90FF;
+}
